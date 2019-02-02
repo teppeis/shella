@@ -1,10 +1,26 @@
 {
   "name": "shella",
+  "description": "Tagged template to run shell script with `execa`.",
   "version": "1.0.0",
   "author": "Teppei Sato <teppeis@gmail.com>",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require intelli-espower-loader test"
+  },
+  "dependencies": {
+    "@tehshrike/shell-escape-tag": "^1.2.2",
+    "execa": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-teppeis": "^9.0.0",
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^5.2.0",
+    "power-assert": "^1.6.1",
+    "prettier": "^1.16.3"
   },
   "homepage": "https://github.com/teppeis/shella#readme",
   "repository": {
@@ -15,10 +31,5 @@
     "url": "https://github.com/teppeis/shella/issues"
   },
   "keywords": [],
-  "license": "MIT",
-  "devDependencies": {
-    "eslint": "^5.13.0",
-    "eslint-config-teppeis": "^9.0.0",
-    "prettier": "^1.16.3"
-  }
+  "license": "MIT"
 }
