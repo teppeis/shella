@@ -1,6 +1,6 @@
 # shella
 
-Tagged template to run shell script with `execa`.
+Tagged template to run shell script with [`execa`](https://github.com/sindresorhus/execa).
 
 [![npm version][npm-image]][npm-url]
 ![Node.js Version Support][node-version]
@@ -27,18 +27,25 @@ const shella = require('shella');
 
   // interporation (escaped)
   const msg = `Bob's pen`;
-  await shella({stdio: 'pipe'})`echo ${msg}`;
-
-  // with execa options
-  const {stdout, stderr} = await shella({stdio: 'pipe'})`echo foo`;
-  console.log(stdout);
+  await shella`echo ${msg}`;
 
   // sync
   shella.sync`echo foo`;
-
-  // sync with execa options
-  shella.sync({stdio: 'pipe'})`echo foo`;
 })();
+```
+
+## Options
+
+You can specify options for [`execa`](https://github.com/sindresorhus/execa).
+`shella` specify `stdio: 'inherit'` by default, but the other options are `execa`'s default.
+
+```js
+// with execa options
+const {stdout, stderr} = await shella({stdio: 'pipe'})`echo foo`;
+console.log(stdout);
+
+// sync with execa options
+shella.sync({stdio: 'pipe'})`echo foo`;
 ```
 
 ## License
