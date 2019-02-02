@@ -37,7 +37,7 @@ const shella = require('shella');
 ## Options
 
 You can specify options for [`execa`](https://github.com/sindresorhus/execa).
-`shella` specify `stdio: 'inherit'` by default, but the other options are execa's default.
+`shella` specify `stdio: 'inherit'` by default, but the other options are `execa`'s default.
 
 ```js
 // with execa options
