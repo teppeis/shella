@@ -53,7 +53,7 @@ shella.sync({stdio: 'pipe'})`echo foo`;
 MIT License: Teppei Sato &lt;teppeis@gmail.com&gt;
 
 [npm-image]: https://img.shields.io/npm/v/shella.svg
-[npm-url]: https://npmjs.org/package/shella
+[npm-url]: https://npmjs.com/package/shella
 [npm-downloads-image]: https://img.shields.io/npm/dm/shella.svg
 [deps-image]: https://img.shields.io/david/teppeis/shella.svg
 [deps-url]: https://david-dm.org/teppeis/shella
