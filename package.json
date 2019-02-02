@@ -3,6 +3,9 @@
   "description": "Tagged template to run shell script with `execa`.",
   "version": "1.0.0",
   "author": "Teppei Sato <teppeis@gmail.com>",
+  "engines": {
+    "node": ">=8"
+  },
   "main": "index.js",
   "files": [
     "index.js"
