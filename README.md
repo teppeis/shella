@@ -16,16 +16,18 @@ $ npm i shella
 
 ## Usage
 
+`shella` returns a value that [`execa`](https://github.com/sindresorhus/execa) returns.
+
 ```js
 const shella = require('shella');
 
 (async () => {
-  // async
+  // async by default
   await shella`
     echo abcde | sed -e 's/bcd/!!!/' > ./result.txt
     grep a ./result.txt`;
 
-  // interporation (escaped)
+  // interporation (shell-escaped)
   const msg = `Bob's pen`;
   await shella`echo ${msg}`;
 
@@ -47,6 +49,11 @@ console.log(stdout);
 // sync with execa options
 shella.sync({stdio: 'pipe'})`echo foo`;
 ```
+
+## Related
+
+- [execa](https://www.npmjs.com/package/execa): A better `child_process`
+- [@tehshrike/shell\-escape\-tag](https://www.npmjs.com/package/@tehshrike/shell-escape-tag): shell-escape-tag, but with a much smaller install size
 
 ## License
 
