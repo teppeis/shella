@@ -1,6 +1,3 @@
 {
-  "extends": ["teppeis/node-v8", "teppeis/+prettier", "teppeis/+mocha"],
-  "rules": {
-    "no-unused-expressions": [2, {"allowTaggedTemplates": true}]
-  }
+  "extends": ["teppeis/node-v8", "teppeis/+prettier", "teppeis/+mocha"]
 }
