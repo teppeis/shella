@@ -30,10 +30,10 @@ const shella = require('shella');
   // interporation (shell-escaped)
   const msg = `Bob's pen`;
   await shella`echo ${msg}`;
-
-  // sync
-  shella.sync`echo foo`;
 })();
+
+// sync
+shella.sync`echo foo`;
 ```
 
 ## Options
