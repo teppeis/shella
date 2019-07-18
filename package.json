@@ -1,7 +1,7 @@
 {
   "name": "shella",
   "description": "Tagged template to run shell script with `execa`.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Teppei Sato <teppeis@gmail.com>",
   "engines": {
     "node": ">=8"
