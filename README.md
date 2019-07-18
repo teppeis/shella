@@ -64,7 +64,7 @@ MIT License: Teppei Sato &lt;teppeis@gmail.com&gt;
 [npm-downloads-image]: https://img.shields.io/npm/dm/shella.svg
 [deps-image]: https://img.shields.io/david/teppeis/shella.svg
 [deps-url]: https://david-dm.org/teppeis/shella
-[node-version]: https://img.shields.io/badge/Node.js%20support-v8,v10,v11-brightgreen.svg
+[node-version]: https://img.shields.io/badge/Node.js%20support-v8,v10,v12-brightgreen.svg
 [license]: https://img.shields.io/npm/l/shella.svg
 [circleci-image]: https://circleci.com/gh/teppeis/shella.svg?style=shield
 [circleci-url]: https://circleci.com/gh/teppeis/shella
