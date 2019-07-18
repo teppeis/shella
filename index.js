@@ -4,7 +4,7 @@ const escape = require("@tehshrike/shell-escape-tag");
 const execa = require("execa");
 
 function shella(...args) {
-  const opts = { stdio: "inherit" };
+  const opts = { stdio: "inherit", shell: true };
   if (!Array.isArray(args[0])) {
     Object.assign(opts, args[0]);
     return (...args) => shellaDo(args, opts);
@@ -14,11 +14,11 @@ function shella(...args) {
 
 function shellaDo(args, opts) {
   const cmd = escape(...args);
-  return execa.shell(cmd, opts);
+  return execa(cmd, opts);
 }
 
 function shellaSync(...args) {
-  const opts = { stdio: "inherit" };
+  const opts = { stdio: "inherit", shell: true };
   if (!Array.isArray(args[0])) {
     Object.assign(opts, args[0]);
     return (...args) => shellaSyncDo(args, opts);
@@ -28,7 +28,7 @@ function shellaSync(...args) {
 
 function shellaSyncDo(args, opts) {
   const cmd = escape(...args);
-  return execa.shellSync(cmd, opts);
+  return execa.sync(cmd, opts);
 }
 
 module.exports = shella;
