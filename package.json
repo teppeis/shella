@@ -20,7 +20,7 @@
     "execa": "^2.0.3"
   },
   "devDependencies": {
-    "eslint": "^6.0.1",
+    "eslint": "^6.1.0",
     "eslint-config-teppeis": "^10.1.2",
     "intelli-espower-loader": "^1.0.1",
     "mocha": "^6.2.0",
