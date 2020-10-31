@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@tehshrike/shell-escape-tag": "^1.2.2",
-    "execa": "^2.1.0"
+    "execa": "^4.1.0"
   },
   "devDependencies": {
     "eslint": "^6.7.2",
