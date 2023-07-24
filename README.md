@@ -1,3 +1,7 @@
+Use https://github.com/google/zx instead. This repo is archived.
+
+---
+
 # shella
 
 Tagged template to run shell script with [`execa`](https://github.com/sindresorhus/execa).
